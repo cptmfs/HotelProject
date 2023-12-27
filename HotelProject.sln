@@ -9,17 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{68
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ToDoList", "ToDoList", "{7DCEB9AC-959F-4133-AE3C-1F97B0F984C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.WebApi", "ApiConsume\HotelProject.WebApi\HotelProject.WebApi.csproj", "{B7A1A1CD-CC04-445E-9D04-BBB277874A30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.WebApi", "ApiConsume\HotelProject.WebApi\HotelProject.WebApi.csproj", "{B7A1A1CD-CC04-445E-9D04-BBB277874A30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.Entity", "ApiConsume\HotelProject.Entity\HotelProject.Entity.csproj", "{A98A6847-8CBC-47AF-980C-E0AE0FF9AD89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.Entity", "ApiConsume\HotelProject.Entity\HotelProject.Entity.csproj", "{A98A6847-8CBC-47AF-980C-E0AE0FF9AD89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.DataAccess", "ApiConsume\HotelProject.DataAccess\HotelProject.DataAccess.csproj", "{7D4E35DD-D6CF-4651-97F6-D427C7BD183E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.DataAccess", "ApiConsume\HotelProject.DataAccess\HotelProject.DataAccess.csproj", "{7D4E35DD-D6CF-4651-97F6-D427C7BD183E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.Business", "ApiConsume\HotelProject.Business\HotelProject.Business.csproj", "{733C8DE3-C5D6-4F1F-A6EE-488DD29A0510}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.Business", "ApiConsume\HotelProject.Business\HotelProject.Business.csproj", "{733C8DE3-C5D6-4F1F-A6EE-488DD29A0510}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.DTO", "ApiConsume\HotelProject.DTO\HotelProject.DTO.csproj", "{116ED3AE-1BD6-44D4-926F-D8C82921D0B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelProject.DTO", "ApiConsume\HotelProject.DTO\HotelProject.DTO.csproj", "{116ED3AE-1BD6-44D4-926F-D8C82921D0B3}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HotelProject.WebUI", "FrontEnd\HotelProject.WebUI\HotelProject.WebUI.fsproj", "{F3994016-4C2F-42F1-8574-F46493AE083B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProject.WebUI", "FrontEnd\HotelProject.WebUI\HotelProject.WebUI.csproj", "{BF74959A-6B47-4680-88C8-22533BA64C92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,10 @@ Global
 		{116ED3AE-1BD6-44D4-926F-D8C82921D0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{116ED3AE-1BD6-44D4-926F-D8C82921D0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{116ED3AE-1BD6-44D4-926F-D8C82921D0B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F3994016-4C2F-42F1-8574-F46493AE083B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F3994016-4C2F-42F1-8574-F46493AE083B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F3994016-4C2F-42F1-8574-F46493AE083B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F3994016-4C2F-42F1-8574-F46493AE083B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF74959A-6B47-4680-88C8-22533BA64C92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF74959A-6B47-4680-88C8-22533BA64C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF74959A-6B47-4680-88C8-22533BA64C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF74959A-6B47-4680-88C8-22533BA64C92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,7 +61,7 @@ Global
 		{7D4E35DD-D6CF-4651-97F6-D427C7BD183E} = {1455B8BE-93C0-4000-B530-9E9876F4869C}
 		{733C8DE3-C5D6-4F1F-A6EE-488DD29A0510} = {1455B8BE-93C0-4000-B530-9E9876F4869C}
 		{116ED3AE-1BD6-44D4-926F-D8C82921D0B3} = {1455B8BE-93C0-4000-B530-9E9876F4869C}
-		{F3994016-4C2F-42F1-8574-F46493AE083B} = {6896313A-F700-4BB7-A546-83F6AA1756D1}
+		{BF74959A-6B47-4680-88C8-22533BA64C92} = {6896313A-F700-4BB7-A546-83F6AA1756D1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E5385C8F-AC2A-4FF3-88C4-F69DA4238128}

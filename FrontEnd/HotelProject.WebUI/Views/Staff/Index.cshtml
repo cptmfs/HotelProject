@@ -1,0 +1,32 @@
+﻿@model List<StaffViewModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<table class="table table-stripped">
+    <tr>
+        <th>#</th>
+        <th>Personel Adı</th>
+        <th>Personel Ünvan</th>
+        <th>İşlemler</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.StaffID</th>
+            <td>@item.Name</td>
+            <td>@item.Title</td>
+            <td>
+                <a href="#" class="btn mb-1 btn-rounded btn-outline-primary">Detay</a>
+                <a href="#" class="btn mb-1 btn-rounded btn-outline-warning">Güncelle</a>
+                <a href="#" class="btn mb-1 btn-rounded btn-outline-danger">Sil</a>
+            </td>
+
+        </tr>
+    }
+
+</table>
+<a asp-action="AddStaf" asp-controller="Staff" class="btn mb-1 btn-rounded btn-outline-success">Yeni Personel Girişi</a>
+
+

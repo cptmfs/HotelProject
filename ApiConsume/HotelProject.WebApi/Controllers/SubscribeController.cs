@@ -27,7 +27,7 @@ namespace HotelProject.WebApi.Controllers
             _subscribeService.ServiceInsert(subscribe);
             return Ok();
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteSubscribeS(int id)
         {
             var value = _subscribeService.ServiceGetById(id);

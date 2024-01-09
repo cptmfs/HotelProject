@@ -1,0 +1,27 @@
+﻿@model UpdateServiceDto
+@{
+    ViewData["Title"] = "UpdateTestimonial";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="ServiceID" />
+    <div>
+        <label>Hizmet Görseli</label>
+    </div>
+    @* <input type="file" asp-for="ServiceIcon" class="form-control" /> *@
+    <img src="~/Images/@Model.ServiceIcon"  style="width:75px;height:75px;"/>
+    <input type="file" id="ServiceIconUpload" name="ServiceIconUpload" class="form-control-file" />
+
+    <br />
+    <label>Hizmet Başlığı</label>
+    <input type="text" asp-for="Title" class="form-control" />
+    <br />
+    <label>Hizmet Açıklaması</label>
+    <input type="text" asp-for="Description" class="form-control" />
+    <br />
+
+    <button class="btn mb-1 btn-rounded btn-outline-success">Hizmeti Ekle</button>
+</form>
+
+

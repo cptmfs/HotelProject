@@ -1,5 +1,6 @@
 ﻿using HotelProject.Business.Abstract;
 using HotelProject.Entity.Concrete;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -47,5 +48,6 @@ namespace HotelProject.WebApi.Controllers
             var value = _serviceService.ServiceGetById(id);
             return Ok(value);
         }
+
     }
 }

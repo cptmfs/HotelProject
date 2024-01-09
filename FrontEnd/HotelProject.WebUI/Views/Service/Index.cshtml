@@ -1,0 +1,35 @@
+﻿@model List<ResultServiceDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<table class="table table-stripped">
+    <tr>
+        <th>#</th>
+        <th>Hizmet Görseli</th>
+        <th>Hizmet Başlığı</th>
+        <th>Hizmet Açıklaması</th>
+        <th>İşlemler</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.ServiceID</th>
+            <th><img src="~/images/@item.ServiceIcon" width="75px" height="75px" /></th>
+            <td>@item.Title</td>
+            <td>@item.Description</td>
+            <td>
+                <a href="#" class="btn mb-1 btn-rounded btn-outline-primary">Detay</a>
+                <a asp-action="UpdateService" asp-controller="Service" asp-route-id="@item.ServiceID" class="btn mb-1 btn-rounded btn-outline-warning">Güncelle</a>
+                <a asp-action="DeleteService" asp-controller="Service" asp-route-id="@item.ServiceID" class="btn mb-1 btn-rounded btn-outline-danger">Sil</a>
+                @* <a href="/Staff/DeleteStaff/@item.StaffID" class="btn mb-1 btn-rounded btn-outline-danger">Sil</a> *@
+            </td>
+
+        </tr>
+    }
+
+</table>
+<a asp-action="AddService" asp-controller="Service" class="btn mb-1 btn-rounded btn-outline-success">Yeni Hizmet Ekle</a>
+
+

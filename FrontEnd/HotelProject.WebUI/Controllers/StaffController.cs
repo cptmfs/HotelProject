@@ -18,7 +18,7 @@ namespace HotelProject.WebUI.Controllers
         public async Task<IActionResult> Index()
         {
             var client= _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("http://localhost:5282/api/Staff");
+            var responseMessage = await client.GetAsync("http://localhost:25072/api/Staff");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -38,7 +38,7 @@ namespace HotelProject.WebUI.Controllers
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(add);
             StringContent stringContent = new StringContent(jsonData,Encoding.UTF8,"application/json");
-            var responseMessage = await client.PostAsync("http://localhost:5282/api/Staff",stringContent);
+            var responseMessage = await client.PostAsync("http://localhost:25072/api/Staff",stringContent);
 
             if (responseMessage.IsSuccessStatusCode)
             {
@@ -50,7 +50,7 @@ namespace HotelProject.WebUI.Controllers
         public async Task<IActionResult> DeleteStaff(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.DeleteAsync($"http://localhost:5282/api/Staff/{id}");
+            var responseMessage = await client.DeleteAsync($"http://localhost:25072/api/Staff/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");
@@ -63,7 +63,7 @@ namespace HotelProject.WebUI.Controllers
         public async Task<IActionResult> UpdateStaff(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync($"http://localhost:5282/api/Staff/{id}");
+            var responseMessage = await client.GetAsync($"http://localhost:25072/api/Staff/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -81,7 +81,7 @@ namespace HotelProject.WebUI.Controllers
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(model);
             StringContent stringContent = new StringContent(jsonData,Encoding.UTF8,"application/json");
-            var responseMessage = await client.PutAsync("http://localhost:5282/api/Staff", stringContent);
+            var responseMessage = await client.PutAsync("http://localhost:25072/api/Staff", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");

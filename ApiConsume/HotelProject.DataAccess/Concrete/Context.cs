@@ -22,5 +22,6 @@ namespace HotelProject.DataAccess.Concrete
         public DbSet<Subscribe> Subscribes { get; set; }
         public DbSet<Testimionial> Testimionials { get; set; }
         public DbSet<About> Abouts { get; set; }
+        public DbSet<Booking> Bookings{ get; set; }
     }
 }

@@ -9,5 +9,6 @@ namespace HotelProject.Business.Abstract
 {
     public interface IBookingService:IGenericService<Booking>
     {
+        void ServiceBookingStatusChangeApproved(Booking booking);
     }
 }
